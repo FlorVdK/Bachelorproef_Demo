@@ -1,0 +1,45 @@
+{
+    "name": "node-backend-boilerplate",
+    "version": "1.0.0",
+    "description": "Boilerplate setup for node backend API",
+    "main": "server.js",
+    "repository": "https://git.ikdoeict.be/laurens.decock/node-backend-boilerplate.git",
+    "author": "Laurens De Cock <laurens.decock@odisee.be>",
+    "license": "MIT",
+    "scripts": {
+      "resetdb": "tsc && node build/scripts/resetdb",
+      "resetQuestions": "tsc && node build/scripts/resetQuestions",
+      "resetFeedback": "tsc && node build/scripts/resetFeedback",
+      "seed": "node scripts/seed",
+      "start": "node server",
+      "dev": "ts-node-dev --respawn --transpileOnly ./server.ts",
+      "build": "tsc",
+      "prod": "tsc && node ./build/server"
+    },
+    "devDependencies": {
+      "eslint": "^6.8.0",
+      "eslint-plugin-prettier": "^3.1.3",
+      "nodemon": "^2.0.4",
+      "prettier": "^1.19.1",
+      "prompt-confirm": "^2.0.4",
+      "sequelize-cli": "^5.5.1"
+    },
+    "dependencies": {
+      "@types/express": "^4.17.6",
+      "@types/firebase": "^3.2.1",
+      "body-parser": "^1.18.3",
+      "cors": "^2.8.5",
+      "crypto": "^1.0.1",
+      "express": "^4.16.3",
+      "express-swagger-generator": "^1.1.15",
+      "firebase-admin": "^8.12.1",
+      "jsonwebtoken": "^8.3.0",
+      "moment": "^2.26.0",
+      "multer": "^1.3.1",
+      "nodemailer": "^6.4.6",
+      "shortid": "^2.2.8",
+      "ts-node-dev": "^1.0.0-pre.44",
+      "typescript": "^3.9.3"
+    }
+  }
+  
